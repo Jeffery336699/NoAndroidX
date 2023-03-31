@@ -37,6 +37,7 @@ dependencies {
 
     // 包含ViewModel和LiveData
     implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+    annotationProcessor "android.arch.lifecycle:compiler:$lifecycle_version"
     // 仅仅包含ViewModel
     implementation "android.arch.lifecycle:viewmodel:$lifecycle_version" // For Kotlin use viewmodel-ktx
     // 仅仅包含LiveData

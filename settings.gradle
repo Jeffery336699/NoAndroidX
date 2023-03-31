@@ -1,5 +1,7 @@
 pluginManagement {
     repositories {
+        //  不能翻墙用这个
+        maven { url 'https://dl.google.com/dl/android/maven2' }
         maven { url 'https://maven.google.com' }
         maven { url 'https://maven.aliyun.com/repository/jcenter' }
         maven { url 'https://maven.aliyun.com/repository/google' }
@@ -16,6 +18,8 @@ dependencyResolutionManagement {
         maven {
             url 'https://maven.google.com'
         }
+        //  不能翻墙用这个
+        maven { url 'https://dl.google.com/dl/android/maven2' }
         maven { url 'https://maven.aliyun.com/repository/jcenter' }
         maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url 'https://maven.aliyun.com/repository/central' }
@@ -26,3 +30,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "NoAndroidX"
 include ':app'
+//include ':other'
