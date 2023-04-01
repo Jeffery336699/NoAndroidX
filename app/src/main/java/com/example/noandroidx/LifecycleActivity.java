@@ -21,8 +21,30 @@ public class LifecycleActivity extends AppCompatActivity implements LifecycleObs
         setContentView(R.layout.activity_lifecycle);
         life = new MyLife();
         getLifecycle().addObserver(life);
-        getLifecycle().addObserver(new MyLife2());
         getLifecycle().addObserver(this);
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (!isRegister) {
+            getLifecycle().addObserver(new MyLife2());
+            isRegister = true;
+        }
+    }
+
+    boolean isRegister = false;
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
