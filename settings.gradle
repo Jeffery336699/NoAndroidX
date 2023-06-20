@@ -31,3 +31,4 @@ dependencyResolutionManagement {
 rootProject.name = "NoAndroidX"
 include ':app'
 //include ':other'
+include ':drawable'

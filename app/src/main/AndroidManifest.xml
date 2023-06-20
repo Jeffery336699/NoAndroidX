@@ -13,10 +13,7 @@
         android:theme="@style/Theme.NoAndroidX"
         tools:targetApi="31">
         <activity
-            android:name=".EmptyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LifecycleActivity"
+            android:name=".MeasureActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,15 +22,24 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".EmptyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LifecycleActivity"
+            >
+
+        </activity>
+        <activity
             android:name=".SecordActivity"
             android:exported="false" />
-        <activity android:name=".LiveDataActivity"></activity>
+        <activity android:name=".LiveDataActivity" />
         <activity android:name=".MainActivity" />
+
         <provider
+            android:name=".MyProvider"
             android:authorities="${applicationId}.myProvider"
             android:exported="false"
-            android:multiprocess="true"
-            android:name=".MyProvider"/>
+            android:multiprocess="true" />
     </application>
 
 </manifest>

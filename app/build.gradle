@@ -45,6 +45,8 @@ dependencies {
     // 仅仅包含Lifecycles
     implementation "android.arch.lifecycle:runtime:$lifecycle_version"
 
+    implementation 'com.github.anrwatchdog:anrwatchdog:1.4.0'
+
 //    implementation 'com.google.android.material:material:1.8.0'
 //    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 //    testImplementation 'junit:junit:4.13.2'
