@@ -1,4 +1,4 @@
-package com.circle.drawable;
+package com.circle.drawable.activity;
 
 import android.app.ListActivity;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.circle.drawable.R;
 import com.circle.drawable.bean.Message;
 import com.circle.drawable.view.MessageListItem;
 

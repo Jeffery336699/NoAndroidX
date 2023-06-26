@@ -1,4 +1,4 @@
-package com.circle.drawable;
+package com.circle.drawable.activity;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
