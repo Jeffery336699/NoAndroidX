@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.circle.drawable.activity.Byte2StrActivity;
 import com.circle.drawable.activity.CustomDialogActivity;
 import com.circle.drawable.activity.CustomDrawableActivity;
 import com.circle.drawable.activity.DrawableActivity;
@@ -21,6 +22,7 @@ import com.circle.drawable.activity.ThemeActivity;
 import com.circle.drawable.activity.TransitionDemoActivity;
 import com.circle.drawable.activity.TransitionManagerActivity;
 import com.circle.drawable.activity.TransitionManagerXmlActivity;
+import com.circle.drawable.activity.VerticalScrollActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -41,6 +43,8 @@ public class MenuListActivity extends ListActivity {
             put("利用Activity创建Dialog", CustomDialogActivity.class);
             put("汉语转拼音工具类", PinYinDemoActivity.class);
             put("图片点击缩放效果", ImageScaleActivity.class);
+            put("字节数组转字符串", Byte2StrActivity.class);
+            put("仿垂直滚动ViewPager", VerticalScrollActivity.class);
         }
     };
 

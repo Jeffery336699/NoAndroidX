@@ -11,6 +11,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoAndroidX">
         <activity
+            android:name=".activity.VerticalScrollActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TouchSplashActivity"
+            android:exported="true">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".activity.Byte2StrActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ImageScaleActivity"
             android:exported="false" />
         <activity
