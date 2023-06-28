@@ -11,6 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoAndroidX">
         <activity
+            android:name=".activity.ImageScaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PinYinDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CustomDialogActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogTopRight" />
+        <activity
+            android:name=".activity.ThemeActivity"
+            android:exported="false"
+            android:theme="@style/Anim_fade" />
+        <activity
             android:name=".activity.QQListviewActivity"
             android:exported="false" />
         <activity
@@ -38,7 +52,8 @@
         <activity android:name=".activity.CustomDrawableActivity" />
         <activity
             android:name=".MenuListActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Anim_fade">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

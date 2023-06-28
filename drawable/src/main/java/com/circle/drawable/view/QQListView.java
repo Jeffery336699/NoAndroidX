@@ -153,7 +153,7 @@ public class QQListView extends ListView {
                     // 获得当前item的位置x与y
                     mCurrentView.getLocationOnScreen(location);
                     // 设置popupWindow的动画
-                    mPopupWindow.setAnimationStyle(R.style.PopupAnimation);
+                    mPopupWindow.setAnimationStyle(R.style.popwindow_delete_btn_anim_style);
                     mPopupWindow.update();
                     // TODO: 老师的写法简便，xml可以直接写好marginRight，同时x如果超出parent的边界的话也能“自适应"为靠边摆放
                     mPopupWindow.showAtLocation(mCurrentView, Gravity.LEFT | Gravity.TOP,

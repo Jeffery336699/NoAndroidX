@@ -10,10 +10,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.circle.drawable.activity.CustomDialogActivity;
 import com.circle.drawable.activity.CustomDrawableActivity;
 import com.circle.drawable.activity.DrawableActivity;
+import com.circle.drawable.activity.ImageScaleActivity;
+import com.circle.drawable.activity.PinYinDemoActivity;
 import com.circle.drawable.activity.QQListviewActivity;
 import com.circle.drawable.activity.StartupActivity;
+import com.circle.drawable.activity.ThemeActivity;
 import com.circle.drawable.activity.TransitionDemoActivity;
 import com.circle.drawable.activity.TransitionManagerActivity;
 import com.circle.drawable.activity.TransitionManagerXmlActivity;
@@ -33,6 +37,10 @@ public class MenuListActivity extends ListActivity {
             put("TransitionManager动画API使用", TransitionManagerActivity.class);
             put("TransitionManager【xml】转场动画使用", TransitionManagerXmlActivity.class);
             put("QQListView删除", QQListviewActivity.class);
+            put("Theme自定义Activity间的切换动画", ThemeActivity.class);
+            put("利用Activity创建Dialog", CustomDialogActivity.class);
+            put("汉语转拼音工具类", PinYinDemoActivity.class);
+            put("图片点击缩放效果", ImageScaleActivity.class);
         }
     };
 
