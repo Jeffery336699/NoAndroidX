@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="message_list_item_background_unread">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="teal_200">#80DEEA</color>
+    <color name="teal_500">#00BCD4</color>
+    <color name="teal_700">#00838F</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="orange_400">#FFEA00</color>
+    <color name="orange_200">#FFAB40</color>
+    <color name="orange_100">#FFD180</color>
+    <color name="orange_700">#FF6D00</color>
+
+    <color name="red_200">#EF9A9A</color>
+    <color name="red_400">#EF5350</color>
+    <color name="red_600">#E53935</color>
+    <color name="red_800">#C62828</color>
 </resources>

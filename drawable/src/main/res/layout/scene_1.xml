@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="I am the transiton text"
-        android:textColor="@color/message_list_item_background_unread"
+        android:textColor="@color/teal_500"
         android:textSize="14sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

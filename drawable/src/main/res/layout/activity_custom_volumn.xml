@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CustomVolumnActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.circle.drawable.view.CustomVolumControlBar
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_margin="12dp"
+            app:bg="@drawable/icon_volumn"
+            app:circleWidth="16dp"
+            app:dotCount="7"
+            app:firstColor="@color/red_200"
+            app:secondColor="@color/red_400"
+            app:splitSize="20" />
+
+        <com.circle.drawable.view.CustomVolumControlBar2
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_margin="12dp"
+            app:bg="@drawable/icon_volumn"
+            app:circleWidth="16dp"
+            app:dotCount="7"
+            app:firstColor="@color/red_200"
+            app:secondColor="@color/red_400"
+            app:splitSize="20" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.circle.drawable.view.CustomVolumControlBar
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:bg="@drawable/login_logo"
+            app:circleWidth="20dp"
+            app:dotCount="5"
+            app:firstColor="@color/orange_100"
+            app:secondColor="@color/orange_700"
+            app:splitSize="20" />
+
+        <com.circle.drawable.view.CustomVolumControlBar2
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:bg="@drawable/login_logo"
+            app:circleWidth="20dp"
+            app:dotCount="5"
+            app:firstColor="@color/orange_100"
+            app:secondColor="@color/orange_700"
+            app:splitSize="20" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.circle.drawable.view.CustomVolumControlBar
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="end"
+            android:layout_margin="20dp"
+            app:bg="@drawable/range_icon"
+            app:circleWidth="10dp"
+            app:dotCount="3"
+            app:firstColor="@color/teal_200"
+            app:secondColor="@color/teal_500"
+            app:splitSize="22" />
+
+        <com.circle.drawable.view.CustomVolumControlBar2
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="end"
+            android:layout_margin="20dp"
+            app:bg="@drawable/range_icon"
+            app:circleWidth="10dp"
+            app:dotCount="3"
+            app:firstColor="@color/teal_200"
+            app:secondColor="@color/teal_500"
+            app:splitSize="22" />
+
+    </LinearLayout>
+
+</LinearLayout>

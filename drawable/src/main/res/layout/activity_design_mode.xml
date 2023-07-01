@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DesignModeActivity">
+    <Button
+        android:text="策略模式"
+        android:onClick="onStrategy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:text="自定义观察者"
+            android:layout_marginHorizontal="10dp"
+            android:onClick="onCustomObserver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_weight="1"
+            android:text="官方观察者"
+            android:layout_marginHorizontal="10dp"
+            android:onClick="onAuthorityObserver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:text="装饰者模式"
+        android:onClick="onDecorator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="工厂模式(4种)"
+        android:onClick="onFactory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="命令模式"
+            android:onClick="onCommand"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="一次执行多个命令"
+            android:onClick="onCommandQuick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

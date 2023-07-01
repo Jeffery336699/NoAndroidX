@@ -11,6 +11,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoAndroidX">
         <activity
+            android:name=".activity.CustomCircleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CustomVolumnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CustomProgressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CustomImageViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CustomTextViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DesignModeActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.VerticalScrollActivity"
             android:exported="false" />
         <activity

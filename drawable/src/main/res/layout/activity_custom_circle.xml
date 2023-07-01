@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CustomCircleActivity">
+
+    <!-- <com.circle.drawable.view.CustomCircleImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:src="@drawable/range_icon"
+         app:type="circle" />-->
+
+    <com.circle.drawable.view.CustomCircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:borderRadius="20dp"
+        app:src="@drawable/katong1"
+        app:type="round" />
+
+
+    <com.circle.drawable.view.CustomCircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:src="@drawable/katong1"
+        app:type="circle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ajajjjjj" />
+</LinearLayout>

@@ -11,8 +11,14 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.circle.drawable.activity.Byte2StrActivity;
+import com.circle.drawable.activity.CustomCircleActivity;
 import com.circle.drawable.activity.CustomDialogActivity;
 import com.circle.drawable.activity.CustomDrawableActivity;
+import com.circle.drawable.activity.CustomImageViewActivity;
+import com.circle.drawable.activity.CustomProgressActivity;
+import com.circle.drawable.activity.CustomTextViewActivity;
+import com.circle.drawable.activity.CustomVolumnActivity;
+import com.circle.drawable.activity.DesignModeActivity;
 import com.circle.drawable.activity.DrawableActivity;
 import com.circle.drawable.activity.ImageScaleActivity;
 import com.circle.drawable.activity.PinYinDemoActivity;
@@ -23,6 +29,7 @@ import com.circle.drawable.activity.TransitionDemoActivity;
 import com.circle.drawable.activity.TransitionManagerActivity;
 import com.circle.drawable.activity.TransitionManagerXmlActivity;
 import com.circle.drawable.activity.VerticalScrollActivity;
+import com.circle.drawable.view.CustomCircleImageView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -45,6 +52,12 @@ public class MenuListActivity extends ListActivity {
             put("图片点击缩放效果", ImageScaleActivity.class);
             put("字节数组转字符串", Byte2StrActivity.class);
             put("仿垂直滚动ViewPager", VerticalScrollActivity.class);
+            put("设计模式合集", DesignModeActivity.class);
+            put("自定义View-TextView", CustomTextViewActivity.class);
+            put("自定义View-ImageView", CustomImageViewActivity.class);
+            put("自定义View-Progress", CustomProgressActivity.class);
+            put("自定义View-音量", CustomVolumnActivity.class);
+            put("自定义View-圆形圆角图片", CustomCircleActivity.class);
         }
     };
 

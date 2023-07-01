@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CustomProgressActivity">
+
+    <com.circle.drawable.view.CustomProgressBar
+        android:layout_gravity="center"
+        app:firstColor="@color/teal_500"
+        app:secondColor="@color/purple_200"
+        app:circleWidth="20dp"
+        app:speed="150"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <com.circle.drawable.view.CustomProgressBar
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        app:circleWidth="40dp"
+        app:speed="80"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+</LinearLayout>

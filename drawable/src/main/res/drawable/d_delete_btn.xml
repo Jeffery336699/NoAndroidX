@@ -3,6 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <corners android:radius="8dp" />
-    <solid android:color="@color/message_list_item_background_unread" />
+    <solid android:color="@color/teal_500" />
 
 </shape>
