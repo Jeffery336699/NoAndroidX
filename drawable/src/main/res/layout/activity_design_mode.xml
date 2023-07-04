@@ -2,64 +2,104 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activity.DesignModeActivity">
+
     <Button
-        android:text="策略模式"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="onStrategy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:text="策略模式" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <Button
-            android:layout_weight="1"
-            android:text="自定义观察者"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
             android:onClick="onCustomObserver"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"/>
+            android:text="自定义观察者" />
+
         <Button
-            android:layout_weight="1"
-            android:text="官方观察者"
-            android:layout_marginHorizontal="10dp"
-            android:onClick="onAuthorityObserver"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:onClick="onAuthorityObserver"
+            android:text="官方观察者" />
     </LinearLayout>
 
     <Button
-        android:text="装饰者模式"
-        android:onClick="onDecorator"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:onClick="onDecorator"
+        android:text="装饰者模式" />
 
     <Button
-        android:text="工厂模式(4种)"
-        android:onClick="onFactory"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:onClick="onFactory"
+        android:text="工厂模式(4种)" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <Button
-            android:text="命令模式"
-            android:onClick="onCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:onClick="onCommand"
+            android:text="命令模式" />
+
         <Button
-            android:text="一次执行多个命令"
-            android:onClick="onCommandQuick"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:onClick="onCommandQuick"
+            android:text="一次执行多个命令" />
     </LinearLayout>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAdapter"
+        android:text="适配器模式" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onFadece"
+        android:text="外观模式" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onTemplate"
+        android:text="模板模式" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onState"
+            android:text="状态模式" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onStateEx"
+            android:text="状态模式[加强版]" />
+    </LinearLayout>
 
 
 </LinearLayout>

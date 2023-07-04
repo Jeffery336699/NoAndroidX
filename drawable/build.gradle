@@ -27,6 +27,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+//    aaptOptions {
+//        // aapt 附加参数
+//        additionalParameters '--rename-manifest-package', 'com.example.classloader_demo2'
+//        // 是否开启 png 图片优化检查
+//        cruncherEnabled true
+//    }
 }
 
 dependencies {
@@ -36,6 +43,7 @@ dependencies {
 
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"
+//    implementation files('libs/android-support-v4.jar')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

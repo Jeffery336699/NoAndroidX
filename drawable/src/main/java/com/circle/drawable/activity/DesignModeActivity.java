@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.circle.drawable.R;
+import com.circle.drawable.mode.adapter.Mobile;
+import com.circle.drawable.mode.adapter.V220Power;
+import com.circle.drawable.mode.adapter.V5Power;
+import com.circle.drawable.mode.adapter.V5PowerAdapter;
 import com.circle.drawable.mode.command.Command;
 import com.circle.drawable.mode.command.Computer;
 import com.circle.drawable.mode.command.ComputerOffCommond;
@@ -23,6 +27,10 @@ import com.circle.drawable.mode.decorator.IEquip;
 import com.circle.drawable.mode.decorator.RedGemDecorator;
 import com.circle.drawable.mode.decorator.ShoeEquip;
 import com.circle.drawable.mode.decorator.YellowGemDecorator;
+import com.circle.drawable.mode.facede.HomeTheaterFacade;
+import com.circle.drawable.mode.facede.Player;
+import com.circle.drawable.mode.facede.PopcornPopper;
+import com.circle.drawable.mode.facede.Projector;
 import com.circle.drawable.mode.factroy.abtract.RouJiaMo;
 import com.circle.drawable.mode.factroy.method.RoujiaMoStore;
 import com.circle.drawable.mode.factroy.method.XianRouJiaMoStore;
@@ -34,12 +42,19 @@ import com.circle.drawable.mode.observer_custom.ObjectFor3D;
 import com.circle.drawable.mode.observer_custom.Observer;
 import com.circle.drawable.mode.observer_custom.Observer1;
 import com.circle.drawable.mode.observer_custom.Observer2;
+import com.circle.drawable.mode.state.VendingMachine;
+import com.circle.drawable.mode.state.VendingMachineEx;
 import com.circle.drawable.mode.strategy.AttackJY;
 import com.circle.drawable.mode.strategy.DefendTBS;
 import com.circle.drawable.mode.strategy.DisplayA;
 import com.circle.drawable.mode.strategy.Role;
 import com.circle.drawable.mode.strategy.RoleA;
 import com.circle.drawable.mode.strategy.RunJCTQ;
+import com.circle.drawable.mode.template.HRWorker;
+import com.circle.drawable.mode.template.ITWorker;
+import com.circle.drawable.mode.template.ManagerWorker;
+import com.circle.drawable.mode.template.QAWorker;
+import com.circle.drawable.mode.template.Worker;
 
 /**
  * 参考：鸿洋大神的博客
@@ -76,13 +91,13 @@ public class DesignModeActivity extends AppCompatActivity {
         Observer observer1 = new Observer1(subjectFor3d);
         Observer observer2 = new Observer2(subjectFor3d);
 
-        subjectFor3d.setMsg("20140420的3D号码是：127" );
-        subjectFor3d.setMsg("20140421的3D号码是：333" );
+        subjectFor3d.setMsg("20140420的3D号码是：127");
+        subjectFor3d.setMsg("20140421的3D号码是：333");
     }
 
     public void onAuthorityObserver(View view) {
-        SubjectFor3d subjectFor3d = new SubjectFor3d() ;
-        SubjectForSSQ subjectForSSQ = new SubjectForSSQ() ;
+        SubjectFor3d subjectFor3d = new SubjectFor3d();
+        SubjectForSSQ subjectForSSQ = new SubjectForSSQ();
 
         Observer3 observer3 = new Observer3();
         observer3.registerSubject(subjectFor3d);
@@ -113,8 +128,9 @@ public class DesignModeActivity extends AppCompatActivity {
         RouJiaMo suanRoujiaMo = roujiaMoStore.sellRouJiaMo("Suan");
         System.out.println(suanRoujiaMo.name);
     }
+
     // 单例模式
-    public void onSingle(){
+    public void onSingle() {
         Singleton04 instance = Singleton04.getInstance();
         Singleton04 instance2 = Singleton04.getInstance();
         System.out.println(instance == instance2);// true
@@ -163,10 +179,88 @@ public class DesignModeActivity extends AppCompatActivity {
          */
         ControlPanel controlPanel = new ControlPanel();
         // 定义一键搞定模式
-        QuickCommand quickCommand = new QuickCommand(new Command[] { new DoorOffCommond(door),
-                new LightOffCommand(light), new ComputerOnCommond(computer) });
+        QuickCommand quickCommand = new QuickCommand(new Command[]{new DoorOffCommond(door),
+                new LightOffCommand(light), new ComputerOnCommond(computer)});
         System.out.println("****点击一键搞定按钮****");
         controlPanel.setCommand(8, quickCommand);
         controlPanel.keyPressed(8);
+    }
+
+    public void onAdapter(View view) {
+        Mobile mobile = new Mobile();
+        V5Power v5Power = new V5PowerAdapter(new V220Power());
+        mobile.inputPower(v5Power);
+    }
+
+    public void onFadece(View view) {
+        HomeTheaterFacade homeTheaterFacade = new HomeTheaterFacade(new Computer(),
+                new Player(), new Light(), new Projector(), new PopcornPopper());
+        homeTheaterFacade.watchMovie();
+        System.out.println("Loading....");
+        homeTheaterFacade.stopMovie();
+    }
+
+    public void onTemplate(View view) {
+        Worker it1 = new ITWorker("鸿洋");
+        it1.workOneDay();
+        Worker hr = new HRWorker("HR-热巴");
+        hr.workOneDay();
+        Worker qa = new QAWorker("测试-老李哥");
+        qa.workOneDay();
+        Worker pm = new ManagerWorker("项目经理-坑货");
+        pm.workOneDay();
+
+    }
+
+    public void onState(View view) {
+        VendingMachine machine = new VendingMachine(10);
+        machine.insertMoney();
+        machine.backMoney();
+
+        System.out.println("-----------");
+
+        machine.insertMoney();
+        machine.turnCrank();
+
+        System.out.println("----------压力测试-----");
+        machine.insertMoney();
+        machine.insertMoney();
+        machine.turnCrank();
+        machine.turnCrank();
+        machine.backMoney();
+        machine.turnCrank();
+    }
+
+
+    public void onStateEx(View view) {
+        VendingMachineEx machine = new VendingMachineEx(10);
+        machine.insertMoney();
+        machine.backMoney();
+
+        System.out.println("----我要中奖----");
+
+        machine.insertMoney();
+        machine.turnCrank();
+        machine.insertMoney();
+        machine.turnCrank();
+        machine.insertMoney();
+        machine.turnCrank();
+        machine.insertMoney();
+        machine.turnCrank();
+        machine.insertMoney();
+        machine.turnCrank();
+        machine.insertMoney();
+        machine.turnCrank();
+        machine.insertMoney();
+        machine.turnCrank();
+
+        System.out.println("-------压力测试------");
+
+        machine.insertMoney();
+        machine.backMoney();
+        machine.backMoney();
+        machine.turnCrank();// 无效操作
+        machine.turnCrank();// 无效操作
+        machine.backMoney();
     }
 }

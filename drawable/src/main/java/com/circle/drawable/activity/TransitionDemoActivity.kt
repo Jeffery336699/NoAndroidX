@@ -2,6 +2,7 @@ package com.circle.drawable.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.circle.drawable.App
 import com.circle.drawable.R
 
 class TransitionDemoActivity : AppCompatActivity() {
