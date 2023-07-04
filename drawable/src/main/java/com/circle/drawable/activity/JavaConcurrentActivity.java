@@ -10,10 +10,15 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.circle.drawable.R;
+import com.circle.drawable.concur.BookInstance;
 import com.circle.drawable.concur.ConnectPool;
+import com.circle.drawable.concur.CyclicBarrierTest;
+import com.circle.drawable.concur.CyclicBarrierTest2;
 import com.circle.drawable.concur.MutexPrint;
+import com.circle.drawable.concur.PreLoaderUseFutureTask;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutionException;
 
 public class JavaConcurrentActivity extends AppCompatActivity {
 
@@ -86,5 +91,24 @@ public class JavaConcurrentActivity extends AppCompatActivity {
     // TODO: 此例中同时操作的数量为N,达到连接池容量为N的效果
     public void onSemaphoreEx(View view) {
         ConnectPool.main(new String[]{});
+    }
+
+    // TODO: 由于：FutureTask可以返回执行完毕的数据，并且FutureTask的get方法支持阻塞这两个特性，
+    //  我们可以用来预先加载一些可能用到资源，然后要用的时候，调用get方法获取（如果资源加载完，直接返回；否则继续等待其加载完成）。
+    public void onFutureTask(View view) throws ExecutionException, InterruptedException {
+        PreLoaderUseFutureTask.main(new String[]{});
+    }
+
+    // TODO: 电子书每次预加载下一个页的内容
+    public void onFutureTaskEx(View view) throws ExecutionException, InterruptedException {
+        BookInstance.main(new String[]{});
+    }
+
+    public void onCyclicBarrier(View view) {
+        CyclicBarrierTest.main(new String[]{});
+    }
+
+    public void onCyclicBarrierEx(View view) {
+        CyclicBarrierTest2.main(new String[]{});
     }
 }

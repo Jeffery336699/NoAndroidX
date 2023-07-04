@@ -26,7 +26,8 @@
             android:text="CountDowmLatch使用" />
 
     </LinearLayout>
-<LinearLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -43,6 +44,45 @@
             android:layout_weight="1"
             android:onClick="onSemaphoreEx"
             android:text="Semaphore实现连接池" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onFutureTask"
+            android:text="FutureTask预加载资源" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onFutureTaskEx"
+            android:text="FutureTask电子书翻页" />
+
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onCyclicBarrier"
+            android:text="CyclicBarrier-人齐放学回家" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onCyclicBarrierEx"
+            android:text="CyclicBarrier-三人一组" />
 
     </LinearLayout>
 
