@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CompletionServiceActivity">
+    <TextView
+        android:padding="20dp"
+        android:gravity="center"
+        android:text="批量执行任务并且返回结果方案"
+        android:textColor="@color/teal_500"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCompletionService"
+        android:text="推荐: CompletionService ： Executor + BlockingQueue 方案" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onInvokeAll"
+        android:text="ExecutorService.invokeAll 方案" />
+
+
+</LinearLayout>

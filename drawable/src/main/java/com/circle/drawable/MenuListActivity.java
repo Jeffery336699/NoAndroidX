@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.circle.drawable.activity.BadgeActivity;
 import com.circle.drawable.activity.Byte2StrActivity;
+import com.circle.drawable.activity.CompletionServiceActivity;
 import com.circle.drawable.activity.CustomCircleActivity;
 import com.circle.drawable.activity.CustomDialogActivity;
 import com.circle.drawable.activity.CustomDrawableActivity;
@@ -23,8 +24,10 @@ import com.circle.drawable.activity.DesignModeActivity;
 import com.circle.drawable.activity.DrawableActivity;
 import com.circle.drawable.activity.ImageScaleActivity;
 import com.circle.drawable.activity.JavaConcurrentActivity;
+import com.circle.drawable.activity.MultiDownloadActivity;
 import com.circle.drawable.activity.PinYinDemoActivity;
 import com.circle.drawable.activity.QQListviewActivity;
+import com.circle.drawable.activity.ScheduledExecutor2TimerMainActivity;
 import com.circle.drawable.activity.StartupActivity;
 import com.circle.drawable.activity.ThemeActivity;
 import com.circle.drawable.activity.TransitionDemoActivity;
@@ -62,6 +65,9 @@ public class MenuListActivity extends ListActivity {
             put("自定义View-圆形圆角图片", CustomCircleActivity.class);
             put("自定义View-滑动Tab+Barge装饰消息通知", BadgeActivity.class);
             put("Java并发系列", JavaConcurrentActivity.class);
+            put("多线程下载", MultiDownloadActivity.class);
+            put("SchedulerService优于Timer三点概述", ScheduledExecutor2TimerMainActivity.class);
+            put("批量执行任务，且携带返回结果的案例", CompletionServiceActivity.class);
         }
     };
 
