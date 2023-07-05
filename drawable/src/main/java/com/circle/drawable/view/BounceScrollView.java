@@ -107,7 +107,7 @@ public class BounceScrollView extends ScrollView {
                             if (!isCalled) {
                                 isCalled = true;
                                 resetPosition();
-                                // mCallback.callback();
+                                mCallback.callback();
                             }
                         }
                     }
