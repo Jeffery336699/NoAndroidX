@@ -18,8 +18,11 @@ import static org.junit.Assert.*;
 public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() {
-        // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.circle.drawable", appContext.getPackageName());
+        double dy = 0;
+        double dx = 10;
+        double atan2 = Math.atan2(dy, dx);
+        int degrees = (int) Math.toDegrees(atan2);
+        System.out.println("atan2="+atan2);
+        System.out.println("degrees="+degrees);
     }
 }

@@ -23,6 +23,7 @@ import com.circle.drawable.activity.CustomTextViewActivity;
 import com.circle.drawable.activity.CustomVolumnActivity;
 import com.circle.drawable.activity.DesignModeActivity;
 import com.circle.drawable.activity.DrawableActivity;
+import com.circle.drawable.activity.GestureLockActivity;
 import com.circle.drawable.activity.ImageScaleActivity;
 import com.circle.drawable.activity.JavaConcurrentActivity;
 import com.circle.drawable.activity.MultiDownloadActivity;
@@ -69,7 +70,8 @@ public class MenuListActivity extends ListActivity {
             put("多线程下载", MultiDownloadActivity.class);
             put("SchedulerService优于Timer三点概述", ScheduledExecutor2TimerMainActivity.class);
             put("批量执行任务，且携带返回结果的案例", CompletionServiceActivity.class);
-            put("回弹滚动ScrollerView", BounceScrollActivity.class);
+            put("自定义View-回弹滚动ScrollerView", BounceScrollActivity.class);
+            put("自定义View-手势锁控件", GestureLockActivity.class);
         }
     };
 
