@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.circle.drawable.activity.BadgeActivity;
+import com.circle.drawable.activity.BounceScrollActivity;
 import com.circle.drawable.activity.Byte2StrActivity;
 import com.circle.drawable.activity.CompletionServiceActivity;
 import com.circle.drawable.activity.CustomCircleActivity;
@@ -68,6 +69,7 @@ public class MenuListActivity extends ListActivity {
             put("多线程下载", MultiDownloadActivity.class);
             put("SchedulerService优于Timer三点概述", ScheduledExecutor2TimerMainActivity.class);
             put("批量执行任务，且携带返回结果的案例", CompletionServiceActivity.class);
+            put("回弹滚动ScrollerView", BounceScrollActivity.class);
         }
     };
 
