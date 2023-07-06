@@ -26,11 +26,26 @@ public class DialogFragmentActivity extends AppCompatActivity implements LoginDi
     public void onXml(View view) {
         EditNameDialogFragment editNameDialog = new EditNameDialogFragment();
         editNameDialog.show(getFragmentManager(), "EditNameDialog");
+
+        /**
+        多次show,dismiss没啥问题
+        editNameDialog.dismiss();
+        editNameDialog = new EditNameDialogFragment();
+        editNameDialog.show(getFragmentManager(), "EditNameDialog");
+        */
+
     }
 
     public void onCreateDialog(View view) {
         LoginDialogFragment dialog = new LoginDialogFragment();
         dialog.show(getFragmentManager(), "loginDialog");
+
+        /**
+        多次show,dismiss没啥问题
+        dialog.dismiss();
+        dialog = new LoginDialogFragment();
+        dialog.show(getFragmentManager(), "loginDialog");
+        */
     }
 
     // TODO: 通过接口回调与Fragment通信
@@ -39,7 +54,7 @@ public class DialogFragmentActivity extends AppCompatActivity implements LoginDi
         Toast.makeText(this, "username=" + username + "\r\npassword=" + password, Toast.LENGTH_SHORT).show();
     }
 
-    int i = 1;
+    int i = 0;
 
     public void showDialogInDifferentScreen(View view) {
         FragmentManager fragmentManager = getFragmentManager();

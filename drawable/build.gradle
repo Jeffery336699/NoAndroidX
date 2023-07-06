@@ -49,4 +49,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     implementation 'com.github.open-android:pinyin4j:2.5.0'
+    implementation 'com.android.volley:volley:1.2.1'
 }

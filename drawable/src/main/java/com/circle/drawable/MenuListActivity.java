@@ -14,6 +14,7 @@ import com.circle.drawable.activity.BadgeActivity;
 import com.circle.drawable.activity.BounceScrollActivity;
 import com.circle.drawable.activity.Byte2StrActivity;
 import com.circle.drawable.activity.CompletionServiceActivity;
+import com.circle.drawable.activity.ConfigChangesTestActivity;
 import com.circle.drawable.activity.CustomCircleActivity;
 import com.circle.drawable.activity.CustomDialogActivity;
 import com.circle.drawable.activity.CustomDrawableActivity;
@@ -24,12 +25,15 @@ import com.circle.drawable.activity.CustomVolumnActivity;
 import com.circle.drawable.activity.DesignModeActivity;
 import com.circle.drawable.activity.DialogFragmentActivity;
 import com.circle.drawable.activity.DrawableActivity;
+import com.circle.drawable.activity.FixProblemsActivity;
+import com.circle.drawable.activity.FragmentRetainDataActivity;
 import com.circle.drawable.activity.GestureLockActivity;
 import com.circle.drawable.activity.ImageScaleActivity;
 import com.circle.drawable.activity.JavaConcurrentActivity;
 import com.circle.drawable.activity.MultiDownloadActivity;
 import com.circle.drawable.activity.PinYinDemoActivity;
 import com.circle.drawable.activity.QQListviewActivity;
+import com.circle.drawable.activity.SavedInstanceStateUsingActivity;
 import com.circle.drawable.activity.ScheduledExecutor2TimerMainActivity;
 import com.circle.drawable.activity.ThemeActivity;
 import com.circle.drawable.activity.TransitionManagerActivity;
@@ -71,6 +75,10 @@ public class MenuListActivity extends ListActivity {
             put("自定义View-手势锁控件", GestureLockActivity.class);
             put("自定义View-卫星菜单", ArcMenuActivity.class);
             put("DialogFragment 创建对话框", DialogFragmentActivity.class);
+            put("数据状态保留(少量数据)-SavedInstanceState", SavedInstanceStateUsingActivity.class);
+            put("数据状态保留(大的数据 eg.Bitmap)-FragmentRetainData", FragmentRetainDataActivity.class);
+            put("数据状态保留-配置configChanges", ConfigChangesTestActivity.class);
+            put("数据状态保留-最终方案(Fragment保留Task)", FixProblemsActivity.class);
         }
     };
 
