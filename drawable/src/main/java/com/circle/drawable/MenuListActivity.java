@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.circle.drawable.activity.ArcMenuActivity;
 import com.circle.drawable.activity.BadgeActivity;
 import com.circle.drawable.activity.BounceScrollActivity;
 import com.circle.drawable.activity.Byte2StrActivity;
@@ -72,6 +73,7 @@ public class MenuListActivity extends ListActivity {
             put("批量执行任务，且携带返回结果的案例", CompletionServiceActivity.class);
             put("自定义View-回弹滚动ScrollerView", BounceScrollActivity.class);
             put("自定义View-手势锁控件", GestureLockActivity.class);
+            put("自定义View-卫星菜单", ArcMenuActivity.class);
         }
     };
 

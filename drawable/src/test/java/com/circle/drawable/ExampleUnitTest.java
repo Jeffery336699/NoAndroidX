@@ -37,4 +37,10 @@ public class ExampleUnitTest {
             i++;
         }
     }
+
+    @Test
+    public void test_degrees(){
+        int degrees = (int) Math.toDegrees(Math.PI / 2);
+        System.out.println("degrees="+degrees);
+    }
 }
