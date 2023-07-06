@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  大屏的时候该值不一样的取值,做屏幕适配(大小屏)  -->
+    <bool name="large_layout">true</bool>
+
+</resources>

@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoAndroidX">
         <activity
+            android:name=".activity.DialogFragmentActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ArcMenuActivity"
             android:exported="false" />
         <activity

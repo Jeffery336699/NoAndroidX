@@ -41,7 +41,6 @@ public class ArcMenu extends ViewGroup implements View.OnClickListener {
      */
     private  int mAnimalDurationMillis = 300;
 
-
     /**
      * 当前ArcMenu的状态
      */

@@ -8,7 +8,6 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.circle.drawable.activity.ArcMenuActivity;
 import com.circle.drawable.activity.BadgeActivity;
@@ -23,6 +22,7 @@ import com.circle.drawable.activity.CustomProgressActivity;
 import com.circle.drawable.activity.CustomTextViewActivity;
 import com.circle.drawable.activity.CustomVolumnActivity;
 import com.circle.drawable.activity.DesignModeActivity;
+import com.circle.drawable.activity.DialogFragmentActivity;
 import com.circle.drawable.activity.DrawableActivity;
 import com.circle.drawable.activity.GestureLockActivity;
 import com.circle.drawable.activity.ImageScaleActivity;
@@ -31,16 +31,12 @@ import com.circle.drawable.activity.MultiDownloadActivity;
 import com.circle.drawable.activity.PinYinDemoActivity;
 import com.circle.drawable.activity.QQListviewActivity;
 import com.circle.drawable.activity.ScheduledExecutor2TimerMainActivity;
-import com.circle.drawable.activity.StartupActivity;
 import com.circle.drawable.activity.ThemeActivity;
-import com.circle.drawable.activity.TransitionDemoActivity;
 import com.circle.drawable.activity.TransitionManagerActivity;
 import com.circle.drawable.activity.TransitionManagerXmlActivity;
 import com.circle.drawable.activity.VerticalScrollActivity;
-import com.circle.drawable.view.CustomCircleImageView;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -74,6 +70,7 @@ public class MenuListActivity extends ListActivity {
             put("自定义View-回弹滚动ScrollerView", BounceScrollActivity.class);
             put("自定义View-手势锁控件", GestureLockActivity.class);
             put("自定义View-卫星菜单", ArcMenuActivity.class);
+            put("DialogFragment 创建对话框", DialogFragmentActivity.class);
         }
     };
 
