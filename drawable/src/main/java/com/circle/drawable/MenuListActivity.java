@@ -37,6 +37,7 @@ import com.circle.drawable.activity.PinYinDemoActivity;
 import com.circle.drawable.activity.PropertyAnim2Activity;
 import com.circle.drawable.activity.PropertyAnimActivity;
 import com.circle.drawable.activity.QQListviewActivity;
+import com.circle.drawable.activity.RecycleGalleryActivity;
 import com.circle.drawable.activity.SavedInstanceStateUsingActivity;
 import com.circle.drawable.activity.ScheduledExecutor2TimerMainActivity;
 import com.circle.drawable.activity.ThemeActivity;
@@ -87,6 +88,7 @@ public class MenuListActivity extends ListActivity {
             put("属性动画学习-1", PropertyAnimActivity.class);
             put("属性动画学习-2", PropertyAnim2Activity.class);
             put("自定义View-水平滚动画廊效果", HorizontalScrollActivity.class);
+            put("自定义View-recycleView优化画廊", RecycleGalleryActivity.class);
         }
     };
 
