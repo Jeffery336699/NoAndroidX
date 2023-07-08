@@ -22,6 +22,10 @@ public class OtherRetainedFragment extends Fragment {
         super.onCreate(savedInstanceState);
         // retain this fragment
         setRetainInstance(true);
+        // TODO: 这个获取的FM根据情况来定
+        //  1.该Fragment如果它存在于Activity的容器中,该方法获取到的FM则是getActivity.getFragmentManager
+        //  2.该Fragment如果它存在于Fragment(上一个Parent Fragment)的容器中,该方法获取到的FM则是Parent_Fragment.getChildFragmentManager
+        // getFragmentManager();
     }
 
     public void setData(MyAsyncTask data) {

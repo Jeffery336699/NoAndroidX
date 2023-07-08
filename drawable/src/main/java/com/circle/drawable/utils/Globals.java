@@ -30,10 +30,27 @@ public class Globals {
         return dm.widthPixels;
     }
 
+    /**
+     * 默认减去状态bar的高度
+     * @return
+     */
     public static int getScreenHeight() {
         Resources resources = getApplication().getApplicationContext().getResources();
         DisplayMetrics dm = resources.getDisplayMetrics();
-        return dm.heightPixels;
+        return dm.heightPixels-getStatusBarHeight();
     }
+
+    public static int getStatusBarHeight() {
+        int height = 0;
+        int resourceId = getApplication().getApplicationContext().getResources().getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            height = getApplication().getApplicationContext().getResources().getDimensionPixelSize(resourceId);
+        }
+        return height;
+    }
+
+
+
+
 
 }

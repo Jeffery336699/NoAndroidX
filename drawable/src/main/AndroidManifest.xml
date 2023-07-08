@@ -15,6 +15,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoAndroidX">
         <activity
+            android:name=".activity.HorizontalScrollActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PropertyAnim2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PropertyAnimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CustomViewPagerTranslateActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.FixProblemsActivity"
             android:exported="false" />
         <activity

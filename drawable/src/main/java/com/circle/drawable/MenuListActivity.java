@@ -21,6 +21,7 @@ import com.circle.drawable.activity.CustomDrawableActivity;
 import com.circle.drawable.activity.CustomImageViewActivity;
 import com.circle.drawable.activity.CustomProgressActivity;
 import com.circle.drawable.activity.CustomTextViewActivity;
+import com.circle.drawable.activity.CustomViewPagerTranslateActivity;
 import com.circle.drawable.activity.CustomVolumnActivity;
 import com.circle.drawable.activity.DesignModeActivity;
 import com.circle.drawable.activity.DialogFragmentActivity;
@@ -28,10 +29,13 @@ import com.circle.drawable.activity.DrawableActivity;
 import com.circle.drawable.activity.FixProblemsActivity;
 import com.circle.drawable.activity.FragmentRetainDataActivity;
 import com.circle.drawable.activity.GestureLockActivity;
+import com.circle.drawable.activity.HorizontalScrollActivity;
 import com.circle.drawable.activity.ImageScaleActivity;
 import com.circle.drawable.activity.JavaConcurrentActivity;
 import com.circle.drawable.activity.MultiDownloadActivity;
 import com.circle.drawable.activity.PinYinDemoActivity;
+import com.circle.drawable.activity.PropertyAnim2Activity;
+import com.circle.drawable.activity.PropertyAnimActivity;
 import com.circle.drawable.activity.QQListviewActivity;
 import com.circle.drawable.activity.SavedInstanceStateUsingActivity;
 import com.circle.drawable.activity.ScheduledExecutor2TimerMainActivity;
@@ -79,6 +83,10 @@ public class MenuListActivity extends ListActivity {
             put("数据状态保留(大的数据 eg.Bitmap)-FragmentRetainData", FragmentRetainDataActivity.class);
             put("数据状态保留-配置configChanges", ConfigChangesTestActivity.class);
             put("数据状态保留-最终方案(Fragment保留Task)", FixProblemsActivity.class);
+            put("自定义View-ViewPager切换效果", CustomViewPagerTranslateActivity.class);
+            put("属性动画学习-1", PropertyAnimActivity.class);
+            put("属性动画学习-2", PropertyAnim2Activity.class);
+            put("自定义View-水平滚动画廊效果", HorizontalScrollActivity.class);
         }
     };
 
