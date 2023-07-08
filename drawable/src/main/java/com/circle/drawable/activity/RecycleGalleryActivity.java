@@ -4,14 +4,11 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
-import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.circle.drawable.R;
 import com.circle.drawable.adapter.GalleryAdapter;
-import com.circle.drawable.view.CopyOfMyRecyclerView;
 import com.circle.drawable.view.GalleryRecyclerView;
 
 import java.util.ArrayList;
@@ -47,20 +44,14 @@ public class RecycleGalleryActivity extends Activity {
         mAdapter = new GalleryAdapter(this, mDatas);
         mRecyclerView.setAdapter(mAdapter);
 
-        mRecyclerView.setOnItemScrollChangeListener(new GalleryRecyclerView.OnItemScrollChangeListener() {
-            @Override
-            public void onChange(View view, int position) {
-                mImg.setImageResource(mDatas.get(position));
-                Log.i("TAG", "onChange:   position="+position);
-            }
+        mRecyclerView.setOnItemScrollChangeListener((view, position) -> {
+            mImg.setImageResource(mDatas.get(position));
+            Log.i("TAG", "onChange:   position="+position);
         });
 
-        mAdapter.setOnItemClickLitener(new GalleryAdapter.OnItemClickLitener() {
-            @Override
-            public void onItemClick(View view, int position) {
-				// Toast.makeText(getApplicationContext(), position + "", Toast.LENGTH_SHORT).show();
-                mImg.setImageResource(mDatas.get(position));
-            }
+        mAdapter.setOnItemClickLitener((view, position) -> {
+            // Toast.makeText(getApplicationContext(), position + "", Toast.LENGTH_SHORT).show();
+            mImg.setImageResource(mDatas.get(position));
         });
 
     }

@@ -31,6 +31,7 @@ import com.circle.drawable.activity.FragmentRetainDataActivity;
 import com.circle.drawable.activity.GestureLockActivity;
 import com.circle.drawable.activity.HorizontalScrollActivity;
 import com.circle.drawable.activity.ImageScaleActivity;
+import com.circle.drawable.activity.InflateActivity;
 import com.circle.drawable.activity.JavaConcurrentActivity;
 import com.circle.drawable.activity.MultiDownloadActivity;
 import com.circle.drawable.activity.PinYinDemoActivity;
@@ -89,6 +90,7 @@ public class MenuListActivity extends ListActivity {
             put("属性动画学习-2", PropertyAnim2Activity.class);
             put("自定义View-水平滚动画廊效果", HorizontalScrollActivity.class);
             put("自定义View-recycleView优化画廊", RecycleGalleryActivity.class);
+            put("LayoutInflate.inflate(resId, root, attachToRoot)深度解析", InflateActivity.class);
         }
     };
 
