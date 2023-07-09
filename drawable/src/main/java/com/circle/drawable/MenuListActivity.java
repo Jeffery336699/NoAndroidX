@@ -18,6 +18,7 @@ import com.circle.drawable.activity.ConfigChangesTestActivity;
 import com.circle.drawable.activity.CustomCircleActivity;
 import com.circle.drawable.activity.CustomDialogActivity;
 import com.circle.drawable.activity.CustomDrawableActivity;
+import com.circle.drawable.activity.CustomFlowLayoutActivity;
 import com.circle.drawable.activity.CustomImageViewActivity;
 import com.circle.drawable.activity.CustomProgressActivity;
 import com.circle.drawable.activity.CustomTextViewActivity;
@@ -93,6 +94,7 @@ public class MenuListActivity extends ListActivity {
             put("自定义View-recycleView优化画廊", RecycleGalleryActivity.class);
             put("LayoutInflate.inflate(resId, root, attachToRoot)深度解析", InflateActivity.class);
             put("自定义View-ViewGroup容器探究", CustomViewGroupActivity.class);
+            put("自定义View-FlowLayout流式布局(标签)", CustomFlowLayoutActivity.class);
         }
     };
 
