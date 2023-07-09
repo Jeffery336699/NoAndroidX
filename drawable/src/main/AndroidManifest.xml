@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoAndroidX">
         <activity
+            android:name=".activity.CustomViewGroupActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.InflateActivity"
             android:exported="false" />
         <activity

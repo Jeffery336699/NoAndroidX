@@ -21,6 +21,7 @@ import com.circle.drawable.activity.CustomDrawableActivity;
 import com.circle.drawable.activity.CustomImageViewActivity;
 import com.circle.drawable.activity.CustomProgressActivity;
 import com.circle.drawable.activity.CustomTextViewActivity;
+import com.circle.drawable.activity.CustomViewGroupActivity;
 import com.circle.drawable.activity.CustomViewPagerTranslateActivity;
 import com.circle.drawable.activity.CustomVolumnActivity;
 import com.circle.drawable.activity.DesignModeActivity;
@@ -91,6 +92,7 @@ public class MenuListActivity extends ListActivity {
             put("自定义View-水平滚动画廊效果", HorizontalScrollActivity.class);
             put("自定义View-recycleView优化画廊", RecycleGalleryActivity.class);
             put("LayoutInflate.inflate(resId, root, attachToRoot)深度解析", InflateActivity.class);
+            put("自定义View-ViewGroup容器探究", CustomViewGroupActivity.class);
         }
     };
 
