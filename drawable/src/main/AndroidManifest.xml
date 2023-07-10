@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoAndroidX">
         <activity
+            android:name=".activity.ChatRobotActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.NOAidlStudyActivity"
             android:exported="false" />
         <activity
@@ -179,19 +182,20 @@
             android:process=":remoteAidl">
             <intent-filter>
                 <action android:name="com.zhy.aidl.calc" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
-
-        <service android:name=".service.CalcPlusService"
+        <service
+            android:name=".service.CalcPlusService"
             android:exported="true"
             android:process=":remoteNoAidl">
             <intent-filter>
                 <action android:name="com.zhy.aidl.calcplus" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
-
     </application>
 
 </manifest>

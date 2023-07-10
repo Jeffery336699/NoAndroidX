@@ -14,6 +14,7 @@ import com.circle.drawable.activity.ArcMenuActivity;
 import com.circle.drawable.activity.BadgeActivity;
 import com.circle.drawable.activity.BounceScrollActivity;
 import com.circle.drawable.activity.Byte2StrActivity;
+import com.circle.drawable.activity.ChatRobotActivity;
 import com.circle.drawable.activity.CompletionServiceActivity;
 import com.circle.drawable.activity.ConfigChangesTestActivity;
 import com.circle.drawable.activity.CustomCircleActivity;
@@ -101,6 +102,7 @@ public class MenuListActivity extends ListActivity {
             put("借助异步消息机制打造图片加载框架", ImageLoaderActivity.class);
             put("aidl Binder框架浅析", AIDLStudyActivity.class);
             put("手撸aidl Binder框架浅析", NOAidlStudyActivity.class);
+            put("图灵机器人-聊天", ChatRobotActivity.class);
         }
     };
 
