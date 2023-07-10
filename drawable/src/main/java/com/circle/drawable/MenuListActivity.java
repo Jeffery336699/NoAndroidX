@@ -32,6 +32,7 @@ import com.circle.drawable.activity.FixProblemsActivity;
 import com.circle.drawable.activity.FragmentRetainDataActivity;
 import com.circle.drawable.activity.GestureLockActivity;
 import com.circle.drawable.activity.HorizontalScrollActivity;
+import com.circle.drawable.activity.ImageLoaderActivity;
 import com.circle.drawable.activity.ImageScaleActivity;
 import com.circle.drawable.activity.InflateActivity;
 import com.circle.drawable.activity.JavaConcurrentActivity;
@@ -95,6 +96,7 @@ public class MenuListActivity extends ListActivity {
             put("LayoutInflate.inflate(resId, root, attachToRoot)深度解析", InflateActivity.class);
             put("自定义View-ViewGroup容器探究", CustomViewGroupActivity.class);
             put("自定义View-FlowLayout流式布局(标签)", CustomFlowLayoutActivity.class);
+            put("借助异步消息机制打造图片加载框架", ImageLoaderActivity.class);
         }
     };
 

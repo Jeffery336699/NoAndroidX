@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoAndroidX">
         <activity
+            android:name=".activity.ImageLoaderActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.CustomFlowLayoutActivity"
             android:exported="false" />
         <activity
