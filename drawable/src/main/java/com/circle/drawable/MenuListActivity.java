@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.circle.drawable.activity.AIDLStudyActivity;
 import com.circle.drawable.activity.ArcMenuActivity;
 import com.circle.drawable.activity.BadgeActivity;
 import com.circle.drawable.activity.BounceScrollActivity;
@@ -37,6 +38,7 @@ import com.circle.drawable.activity.ImageScaleActivity;
 import com.circle.drawable.activity.InflateActivity;
 import com.circle.drawable.activity.JavaConcurrentActivity;
 import com.circle.drawable.activity.MultiDownloadActivity;
+import com.circle.drawable.activity.NOAidlStudyActivity;
 import com.circle.drawable.activity.PinYinDemoActivity;
 import com.circle.drawable.activity.PropertyAnim2Activity;
 import com.circle.drawable.activity.PropertyAnimActivity;
@@ -97,6 +99,8 @@ public class MenuListActivity extends ListActivity {
             put("自定义View-ViewGroup容器探究", CustomViewGroupActivity.class);
             put("自定义View-FlowLayout流式布局(标签)", CustomFlowLayoutActivity.class);
             put("借助异步消息机制打造图片加载框架", ImageLoaderActivity.class);
+            put("aidl Binder框架浅析", AIDLStudyActivity.class);
+            put("手撸aidl Binder框架浅析", NOAidlStudyActivity.class);
         }
     };
 

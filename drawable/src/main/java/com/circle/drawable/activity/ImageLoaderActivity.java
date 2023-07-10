@@ -1,6 +1,5 @@
 package com.circle.drawable.activity;
 
-import static android.content.ContentValues.TAG;
 import static android.content.pm.PackageManager.PERMISSION_GRANTED;
 
 import android.Manifest;
@@ -31,6 +30,10 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
+/**
+ * 参考: https://blog.csdn.net/lmj623565791/article/details/38476887?spm=1001.2014.3001.5502 (原博客)
+ *  https://blog.csdn.net/lmj623565791/article/details/26810813 (信号量)
+ */
 @SuppressLint("HandlerLeak")
 public class ImageLoaderActivity extends Activity {
     private ProgressDialog mProgressDialog;
