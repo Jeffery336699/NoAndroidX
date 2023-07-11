@@ -37,7 +37,6 @@ import java.util.List;
 @SuppressLint("HandlerLeak")
 public class ImageLoaderActivity extends Activity {
     private ProgressDialog mProgressDialog;
-    private ImageView mImageView;
 
     /**
      * 存储文件夹中的图片数量
@@ -74,7 +73,7 @@ public class ImageLoaderActivity extends Activity {
             /**
              * 可以看到文件夹的路径和图片的路径分开保存，极大的减少了内存的消耗；
              */
-            mAdapter = new MyAdapter(getApplicationContext(), mImgs, mImgDir.getAbsolutePath());
+            mAdapter = new MyAdapter(getApplicationContext(), mImgs, R.layout.grid_item , mImgDir.getAbsolutePath());
             mGirdView.setAdapter(mAdapter);
         }
     };

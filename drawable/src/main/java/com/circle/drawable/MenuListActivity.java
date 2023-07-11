@@ -15,6 +15,7 @@ import com.circle.drawable.activity.BadgeActivity;
 import com.circle.drawable.activity.BounceScrollActivity;
 import com.circle.drawable.activity.Byte2StrActivity;
 import com.circle.drawable.activity.ChatRobotActivity;
+import com.circle.drawable.activity.CommonAdapterActivity;
 import com.circle.drawable.activity.CompletionServiceActivity;
 import com.circle.drawable.activity.ConfigChangesTestActivity;
 import com.circle.drawable.activity.CustomCircleActivity;
@@ -41,6 +42,8 @@ import com.circle.drawable.activity.JavaConcurrentActivity;
 import com.circle.drawable.activity.MultiDownloadActivity;
 import com.circle.drawable.activity.NOAidlStudyActivity;
 import com.circle.drawable.activity.PinYinDemoActivity;
+import com.circle.drawable.activity.PortraitListViewActivity;
+import com.circle.drawable.activity.PortraitScrollActivity;
 import com.circle.drawable.activity.PropertyAnim2Activity;
 import com.circle.drawable.activity.PropertyAnimActivity;
 import com.circle.drawable.activity.QQListviewActivity;
@@ -103,6 +106,9 @@ public class MenuListActivity extends ListActivity {
             put("aidl Binder框架浅析", AIDLStudyActivity.class);
             put("手撸aidl Binder框架浅析", NOAidlStudyActivity.class);
             put("图灵机器人-聊天", ChatRobotActivity.class);
+            put("打造万能的ListView GridView 适配器", CommonAdapterActivity.class);
+            put("自定义View-ScrollView纵向滑动", PortraitScrollActivity.class);
+            put("自定义View-ListView纵向滑动", PortraitListViewActivity.class);
         }
     };
 
