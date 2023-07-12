@@ -38,6 +38,9 @@ public class MyButton extends AppCompatButton {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
+        // TODO: 当parent在Move时拦截,默认情况childView接下来的事件收不到;
+        //  但是还可以请求parent不拦截
+        getParent().requestDisallowInterceptTouchEvent(true);
         int action = event.getAction();
 
         switch (action) {
