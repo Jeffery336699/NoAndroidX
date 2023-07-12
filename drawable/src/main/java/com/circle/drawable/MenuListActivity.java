@@ -54,6 +54,7 @@ import com.circle.drawable.activity.ThemeActivity;
 import com.circle.drawable.activity.TransitionManagerActivity;
 import com.circle.drawable.activity.TransitionManagerXmlActivity;
 import com.circle.drawable.activity.VerticalScrollActivity;
+import com.circle.drawable.activity.ViewTouchEventActivity;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -109,6 +110,7 @@ public class MenuListActivity extends ListActivity {
             put("打造万能的ListView GridView 适配器", CommonAdapterActivity.class);
             put("自定义View-ScrollView纵向滑动", PortraitScrollActivity.class);
             put("自定义View-ListView纵向滑动", PortraitListViewActivity.class);
+            put("自定义View-View事件分发", ViewTouchEventActivity.class);
         }
     };
 

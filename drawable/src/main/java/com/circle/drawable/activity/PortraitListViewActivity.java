@@ -3,6 +3,7 @@ package com.circle.drawable.activity;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Pair;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -19,8 +20,8 @@ import java.util.Random;
 public class PortraitListViewActivity extends Activity {
 
     private PortraitListView mListView;
-    private CommonAdapter<String> mAdapter;
-    private List<String> mDatas;
+    private CommonAdapter<Pair<String,Integer>> mAdapter;
+    private List<Pair<String,Integer>> mDatas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,17 +37,15 @@ public class PortraitListViewActivity extends Activity {
 
     private void initViews() {
         mListView =  findViewById(R.id.id_lv);
-        mAdapter = new CommonAdapter<String>(this, mDatas, R.layout.item2) {
+        mAdapter = new CommonAdapter<Pair<String,Integer>>(this, mDatas, R.layout.item2) {
             @Override
-            public void convert(ViewHolder helper, String item) {
+            public void convert(ViewHolder helper, Pair<String,Integer> item) {
                 View convertView = helper.getConvertView();
-                convertView.setBackgroundColor(Color.rgb(new Random().nextInt(255),
-                        new Random().nextInt(255),
-                        new Random().nextInt(255)));
+                convertView.setBackgroundColor(item.second);
                 ViewGroup.LayoutParams lp = convertView.getLayoutParams();
                 lp.height = mListView.getItemHeight();
                 convertView.setLayoutParams(lp);
-                helper.setText(R.id.id_title2, item);
+                helper.setText(R.id.id_title2, item.first);
             }
         };
 
@@ -57,7 +56,11 @@ public class PortraitListViewActivity extends Activity {
         mDatas = new ArrayList<>();
 
         for (int i = 'A'; i <= 'Z'; i++) {
-            mDatas.add(String.valueOf((char) +i));
+            int color = Color.rgb(new Random().nextInt(255),
+                    new Random().nextInt(255),
+                    new Random().nextInt(255));
+            Pair<String,Integer> pair = new Pair<>(String.valueOf((char) +i), color);
+            mDatas.add(pair);
         }
     }
 }
