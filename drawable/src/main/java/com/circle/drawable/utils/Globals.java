@@ -24,16 +24,16 @@ public class Globals {
         return sApplication;
     }
 
-    public static int getScreenWidth() {
+    /*public static int getScreenWidth() {
         Resources resources = getApplication().getApplicationContext().getResources();
         DisplayMetrics dm = resources.getDisplayMetrics();
         return dm.widthPixels;
     }
 
-    /**
+    *//**
      * 默认减去状态bar的高度
      * @return
-     */
+     *//*
     public static int getScreenHeight() {
         Resources resources = getApplication().getApplicationContext().getResources();
         DisplayMetrics dm = resources.getDisplayMetrics();
@@ -47,7 +47,7 @@ public class Globals {
             height = getApplication().getApplicationContext().getResources().getDimensionPixelSize(resourceId);
         }
         return height;
-    }
+    }*/
 
 
 

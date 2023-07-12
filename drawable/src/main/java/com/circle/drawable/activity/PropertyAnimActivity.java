@@ -17,6 +17,7 @@ import android.widget.ImageView;
 
 import com.circle.drawable.R;
 import com.circle.drawable.utils.Globals;
+import com.circle.drawable.utils.ScreenUtils;
 
 public class PropertyAnimActivity extends AppCompatActivity {
 
@@ -29,7 +30,7 @@ public class PropertyAnimActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_property_anim);
         mBlueBall = findViewById(R.id.id_ball);
-        mScreenHeight = Globals.getScreenHeight();
+        mScreenHeight = ScreenUtils.getScreenHeight(this)-ScreenUtils.getStatusHeight(this);
     }
 
     public void verticalRun(View view) {

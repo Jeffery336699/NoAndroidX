@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.circle.drawable.R;
 import com.circle.drawable.utils.Globals;
+import com.circle.drawable.utils.ScreenUtils;
 import com.circle.drawable.view.ArcMenu;
 
 public class ArcMenuActivity extends AppCompatActivity {
@@ -25,8 +26,8 @@ public class ArcMenuActivity extends AppCompatActivity {
     private void initView() {
         mArcMenu = findViewById(R.id.id_arcmenu1);
         // TODO: 自己构造出measureSpec让其先走测绘流程,这里给出的值只是父容器建议它的参考,它内部还得根据自身具体情形决定最终的宽高
-        mArcMenu.measure(View.MeasureSpec.makeMeasureSpec(Globals.getScreenWidth(), View.MeasureSpec.EXACTLY),
-                View.MeasureSpec.makeMeasureSpec(Globals.getScreenHeight(), View.MeasureSpec.EXACTLY));
+        mArcMenu.measure(View.MeasureSpec.makeMeasureSpec(ScreenUtils.getScreenWidth(this), View.MeasureSpec.EXACTLY),
+                View.MeasureSpec.makeMeasureSpec(ScreenUtils.getScreenHeight(this), View.MeasureSpec.EXACTLY));
         Log.w(TAG, "onCreate:  mArcMenu.getMeasuredWidth()="+mArcMenu.getMeasuredWidth()+" , mArcMenu.getMeasuredHeight()="+mArcMenu.getMeasuredHeight());
     }
 
