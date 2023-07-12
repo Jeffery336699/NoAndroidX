@@ -64,18 +64,18 @@ public class PortraitListView extends ListView implements OnScrollListener {
         a.recycle();
 
         // 计算每个Item高度
-        mItemHeight = (outMetrics.heightPixels - getStatusHeight(context))
-                / mItemCountInOneScreen;
+        mItemHeight = (outMetrics.heightPixels - getStatusHeight(context)) / mItemCountInOneScreen;
 
         // 设置一个滚动监听
         setOnScrollListener(this);
 
-        Log.e(TAG, mItemCountInOneScreen + "");
+        Log.e(TAG, "mItemCountInOneScreen="+mItemCountInOneScreen + " , mItemHeight ="+mItemHeight);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
         int action = ev.getAction();
+        // TODO: 禁止加速度滑动的效果(一撇),不过我觉得加上好些
         if (action == MotionEvent.ACTION_UP) {
             checkForReset();
             return true;
@@ -93,8 +93,9 @@ public class PortraitListView extends ListView implements OnScrollListener {
     }
 
     private void checkForReset() {
-        // 获取第一个Item的top
+        //TODO 获取第一个Item的top,注意是当前屏幕可见的第一个View的Top
         int top = getChildAt(0).getTop();
+        Log.i(TAG, "checkForReset:   top="+top);
         if (top == 0)
             return;
         // 绝对值不为0时，如果绝对值大于mItemHeight的一半，则收缩，即显示下一个Item
@@ -127,7 +128,7 @@ public class PortraitListView extends ListView implements OnScrollListener {
     public void onScroll(AbsListView view, int firstVisibleItem,
                          int visibleItemCount, int totalItemCount) {
         mFirstVisibleItem = firstVisibleItem;
-        // Log.e(TAG, mFirstVisibleItem + "");
+        Log.e(TAG,  "mFirstVisibleItem ="+mFirstVisibleItem);
     }
 
     /**

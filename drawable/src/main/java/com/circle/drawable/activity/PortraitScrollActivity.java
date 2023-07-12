@@ -33,16 +33,14 @@ public class PortraitScrollActivity extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_portrait_scroll);
-
         mInflater = LayoutInflater.from(this);
-
-        mScrollView = (SingleItemScrollView) findViewById(R.id.id_scrollview);
+        mScrollView = findViewById(R.id.id_scrollview);
         mAdapter = new SingleItemScrollView.Adapter() {
 
             @Override
             public View getView(SingleItemScrollView parent, int pos) {
                 View view = mInflater.inflate(R.layout.item, null);
-                ImageView iv = (ImageView) view.findViewById(R.id.id_title);
+                ImageView iv = view.findViewById(R.id.id_title);
                 iv.setImageResource(mDatas.get(pos).getResId());
                 view.setBackgroundColor(mDatas.get(pos).getColor());
                 return view;
@@ -60,8 +58,7 @@ public class PortraitScrollActivity extends Activity {
         mScrollView.setOnItemClickListener(new SingleItemScrollView.OnItemClickListener() {
             @Override
             public void onItemClick(int pos, View view) {
-                Toast.makeText(getApplicationContext(), pos + "",
-                        Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), pos + "", Toast.LENGTH_SHORT).show();
             }
         });
     }
